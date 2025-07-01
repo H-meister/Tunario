@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <script src="app.js" defer></script>
+  <title>Setlists</title>
+</head>
+<body>
+  <header>
+    <h1>Setlists</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="setlists.html">Setlists</a>
+      <a href="sheetmusic.html">Sheet Music</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+  <div class="container">
+    <input type="file" id="setlist" />
+    <button onclick="uploadFile('/upload/setlist', 'setlist', 'setlistList')">Upload Setlist</button>
+    <ul id="setlistList"></ul>
+  </div>
+</body>
+</html>
